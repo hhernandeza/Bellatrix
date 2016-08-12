@@ -1,0 +1,85 @@
+EXPLICACION DE SERVICIOS
+------------------------------
+
+Deal: es una operacion de compra o venta de dolares
+
+1. Hay informacion que se concentra en aplicaciones locales para luego distribuirla a otras aplicaciones y procesarlas
+
+2. Todos los deals que manejamos en tesoreria se ingresan por diversos aplicativos:
+   edealer(deals fx, mm)
+   ebox (deals FI(bonos))
+   Sistema intermedio local (Para procesar informacion a Cosmos - Sistema de Contabilidad)
+   
+3. Sistema de pagos y transferencias de fondos
+
+4. Servicio de interfaz: 
+- Maneja todo el tema de la comunicacion con MQ, con archivos, con SFTP, con Base de datos
+- Enviar informacion ya formeteada a edealer(en formato edealer)
+- Enviar informacion ya formateada a ebox ( en formato ebox)
+- Mover informacion a los sistemas regionales con el formato esperado haciend uso de un servidor MQ
+
+5. Servicio de Logica de negocio.
+- Se va encargar de validar la informacion cargada mediante el servicio de interfaz 
+- ESta informacion lo valida, lo formatea y lo pone disponible para moverla hacia aplicativos regionales
+- Se comunica e interactual con el Servicio de interfaz para que envie la informacion correctamente 
+  formaetada hacia los aplicativos regionales edealer e ebox
+
+6. Se va a requrir que todas estas operaciones deals sean liquidadas, para este procesamiento se va hacer uso 
+   del servicio de LBTR, que va a tomar cada una de estas operaciones y las va a liquidar a travez del servicio 
+   web LBTR, que es la forma como se comunica con el Banco Central de Reserva.
+   Todas las operaciones que entran por diferentes fuentes que se necesiten que sean liquidadas por el BCR van
+   a pasar por el servicio LBTR
+
+Para las operaciones hay dos caminos:
+
+7. Operaciones de las transferencias de fondos pueden venir por los sistemas regionales de edealer, ebox, que previamente
+  han pasado por el servicio de interfaces - Servicio de logica de negocios y luego se liquidan con el Sistema LBTR
+   
+8. Operaciones de las transferencia de fondos que se han ingresado de manera manual mediante el aplicativo cliente TBE
+   Tenemos la aplicación en Power Builder, que maneja varios modulos:
+   - Modulo de Transferencias 
+   - Modulo de transferencias STP
+   - 
+  Todas las transferencias que se registran mediante esta pantalla tambien son procesadas por el servicio LBTR
+  para su liquidacion.
+
+9. Ademas todas las transferencias que llegan del banco central tambien utilizan el servicio LBTR las procesa el mismo servicio
+   y dependiendo de las validaciones que cumpla en el mismo servicio contabiliza directamente en paylinq
+
+
+9. Servicio de compra venta. Se encarga de las operaciones de compra y venta de monedas entre bancos.
+   Todas las operaciones que llegan al sistema de edealer como transacciones de compra y venta viajan de forma automatica
+   se comunican con este servicio de LBTR para que se liquiden.
+
+
+
+EXPLICACION DE BASE DE DATOS
+----------------------------------
+Los servicios van a trabajar con bases de datos que se encuentran en Sybase y en SQL Server:
+
+SQL SERVER.
+ONEDB:INFORMACION DE UN ESPEJO DE COSMOS QUE ES LA INFORMACION CONTABLE
+STBSEGDB: BASE DE DATOS DE SEGURIDAD QUE SE CONECTA CON UNA CAJA DE SEGURIDAD HSM A TRAVEZ DE UNA DLL DE NOVATRONIC, 
+          MEDIANTE FUNCIONES DE ESTA LIBRERIA SE VA A PODER ENCRIPTAR Y DESENCRIPTAR LA INFORMACION QUE SE ENVIA AL SERVICIO LBTR(BCR)
+
+SYBASE:
+GENDB: VALIDACION DEL CLIENTE, QUE LO UTILIZA NUESTROS SERVICIOS
+STBDB: ES LA BASE DE DATOS DE LA APLICACION, ES DECIR ES USADA POR LOS SERVICIOS Y POR LA APLICACION TBE.
+
+
+PRESENTAR Y MOSTRAR DIAGRAMA DE ENRIQUE
+---------------------------------------
+
+
+
+
+PRESENTAR Y MOSTRARLE EL DIGRAMA DE CAPAS 
+-----------------------------------------
+
+
+
+
+
+
+
+
