@@ -1,0 +1,19 @@
+altamente recomendable darlo en casa con computadora, visual studio prendido
+11:33 a.m. 09/12/2016
+position: Developer c# Engeener software
+i gonna try to do OK this
+Excelption in c#
+theory about classes
+ver las conversiones implicitas y explcitas de tipos de datos
+operaciones con clases tipos estaticos
+que son delegates y caracteristicas principales
+estudiar los operadores logicos 
+ventajas del uso de generics en c#
+leer acerca del comando this en el construcctor
+revisar el WPF todo 
+regvisar viene los estaticos variables int}
+
+
+
+
+
