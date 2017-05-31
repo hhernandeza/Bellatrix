@@ -1,0 +1,49 @@
+Hello Hector!
+
+Thank you for your interest in Amazon's Peru Hiring Event for Software Development Engineers!
+
+We would like to invite you to complete our Online SDE Assessment, as the first step of our interview process.
+
+I acknowledge that time is tight, yet we would like to include you in our consideration for onsite interviews if possible.  Therefore, I would like to ask you to please complete the assessment by 11:59PM PST on 7 days from today, due to high-demand.  If you are not able to complete the assessment by then, please let me know so that we can extend the deadline.
+
+IMPORTANT: Please make sure to read the instructions carefully before starting the test! 
+
+The assessment consists of three components:
+
+A coding test (75 min)
+A cultural survey (15 min)
+Feedback survey (5 min) 
+The time remaining will be clearly displayed on the screen. You will not be able to stop the timer once you have started each test, so we recommend that you complete each test in one sitting. 
+
+Some Tips:
+
+During the code portion you may use resources that would be available to all candidates (e.g., the JDK or STL).
+For the code test manage your time wisely!
+The majority of the questions we do are focused on Data Structures and Algorithms, how they work, how to create them from scratch so, refresh all your knowledge on trees, graphs, lists, and what algorithms suit them best for searching, traversing and other operations. One important factor to consider here is  which method is the most efficient to perform an specific task in terms of space/memory.
+In order to have a proper criteria on how an algorithm is most efficient to another, you must be able to perform complexity analysis on any piece of code that you do. The most common way of doing this is with Big O notation.
+One of the most important treats an SDE must have is that the code he writes should be production-quality. That means it’s easy to understand for anyone that firsts looks into it.
+Include tests on your code, it shows that you thought of edge cases for your solution.
+Do not overcomplicate yourself. Simple solutions are usually faster to implement and less bug prone. Many of the problems (as in real life) are more about choosing the correct data structure or algorithm that can solve the problem. If you are thinking on a very complex solution with many corner cases, it’s likely there is a more simple and general one. Also iterate your solutions, if you are worried a certain strategy might be too slow, write your code in a factorized way so you can more easily change that part up without having to rewrite the entire solution.
+Instructions
+
+Do not click the Assessment Link until you are ready to take the assessment in full, you only have one chance. Set aside 2 hours in a quiet location where you will not be interrupted. 
+Ensure you have a reliable internet connection.
+Please use one of the latest versions of Google Chrome, Firefox or Safari.
+Languages available: Java, C, C++, C#, Python, Ruby, JavaScript
+Link: https://tara.vitapowered.com/TestEngine/TestLauncher.aspx?batteryID=eb71883a-e5bb-422a-99db-e297726ad845&key=OH_ItsZJpffz1FhZsStTviBpStLuMwAS7X5bTech-SI1
+
+Next Steps
+
+After completion of the cultural survey, you will receive a survey to allow you to provide us feedback. Once completed, a confirmation page will appear verifying your completion and thanking you for your participation.
+
+Troubleshooting
+
+For any technical issues please examine closely where you left off, log out, and log back in using the credentials above. Do not repeatedly refresh the screen. If you continue to experience technical issues, go here for FAQs to troubleshoot or use the live chat feature for assistance. If technical issues cannot be resolved, please contact me immediately by replying to this email.
+
+We recognize this is a large time investment and we appreciate your interest in Amazon. If you are no longer interested in participating, please let me know.
+
+Thank you and best of luck!
+
+Rafael Grana
+
+rafaemar@amazon.com
